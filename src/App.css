@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
-@keyframes updown{
+/* @keyframes updown{
   0% {
     transform: translateY(-20px);
   }
@@ -256,7 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: translateY(-20px);
   }
-}
+} */
 text-rotate > .wrap{
   border-right: 0.08em solid #666;
 }
@@ -305,6 +305,11 @@ text-rotate > .wrap{
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+.projects img {
+  width: 100%;
+  height: 20em;
 }
 
 /* About */
@@ -432,6 +437,10 @@ text-rotate > .wrap{
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.about img {
+  width: 75%;
 }
 
 /* Contact */
@@ -574,7 +583,7 @@ text-rotate > .wrap{
   letter-spacing: 0.5px;
   border-radius: 19px;
 }
-.footerimg {
+.footer img {
   width: 26%;
 }
 .footer p {

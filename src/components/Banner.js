@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+// import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/conv2.jpg";
 
 export const Banner = () => {
@@ -9,7 +9,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = [ "Educational Developement", "Healthcare", "Sustainable Projects", "Rights Advocacy" ];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(1000);
     const period = 3000;
 
     useEffect(() => {
@@ -48,8 +48,9 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">GGAD</span>
                         <h1>{`Grand Gedeh Association in the Diaspora INC: `} <span className="wrap">{text}</span></h1>
-                        <p>Was founded in 2017 with the goal of providing humanitarian service to Grand Gedians in the diaspora, in Grand Gedeh County and Liberia</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <p>Founded in 2017 with the goal of providing humanitarian service to Grand Gedians in the diaspora, in Grand Gedeh County and Liberia</p>
+                        {/* connect button removed possibly use later */}
+                        {/* <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button> */}
                     </Col>
                     <Col xs={12} md={6} xl={7}>
                         <img src={headerImg} alt="Header Img" />
