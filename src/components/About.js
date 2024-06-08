@@ -1,9 +1,13 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
 import { AboutCard } from "./AboutCard";
 import  levi from "../assets/img/levi.jpeg";
-import  redcarpet5  from "../assets/img/redcarpet5.jpeg";
-import  redcarpet6 from "../assets/img/redcarpet6.jpeg";
-import  redcarpet7 from "../assets/img/redcarpet7.jpeg";
+import headshotF1 from "../assets/img/headshotF1.jpg";
+import headshotF2 from "../assets/img/headshotF2.jpg";
+import headshotF3 from "../assets/img/headshotF3.png";
+import headshotF4 from "../assets/img/headshotF4.png";
+import headshotM1 from "../assets/img/headshotM1.jpg";
+import headshotM2 from "../assets/img/headshotM2.png";
+import headshotM3 from "../assets/img/headshotM3.png";
 
 export const About = () => {
     
@@ -11,28 +15,38 @@ export const About = () => {
         {
             title: "Placeholder",
             description: "Placeholder",
-            imgUrl: redcarpet5, //need img,
+            imgUrl: headshotF1, //need img,
         },
         {
             title: "Placeholder",
             description: "Placeholder",
-            imgUrl: redcarpet6, //need img,
+            imgUrl: headshotF2, //need img,
         },
         {
             title: "Placeholder",
             description: "Placeholder",
-            imgUrl: redcarpet7, //need img,
+            imgUrl: headshotF3, //need img,
         },
         {
             title: "Placeholder",
             description: "Placeholder",
-            imgUrl: levi, //need img,
+            imgUrl: headshotF4, //need img,
         },
         {
             title: "Placeholder",
             description: "Placeholder",
-            imgUrl: levi, //need img,
+            imgUrl: headshotM1, //need img,
         },
+        {
+            title: "Placeholder",
+            description: "Placeholder",
+            imgUrl: headshotM2, //need img,
+        },
+        {
+            title: "Placeholder",
+            description: "Placeholder",
+            imgUrl: headshotM3, //need img,
+        }
     ];
     
     return(
@@ -40,8 +54,8 @@ export const About = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>About</h2>
-                        <p>Need text for section</p>
+                        <h2>Meet the leaders of GGAD</h2>
+                        {/* <p>Need text for section</p> */}
                         <Tab.Container id="about-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>

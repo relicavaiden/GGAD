@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import speech from "../assets/img/speech.jpg"
-import speech2 from "../assets/img/speech2.jpg"
-import redcarpet6 from "../assets/img/redcarpet6.jpeg"
-import redcarpet7 from "../assets/img/redcarpet7.jpeg"
+import baby from "../assets/img/projectOneBabyOneCribjpeg.jpeg"
+import marketBuilding from "../assets/img/projectMarketBuild1.png"
+import schoolDesk from "../assets/img/projectSchoolDesk.png"
+import marketBuilding2 from "../assets/img/projectMarketBuild2.png"
 // Ask if there is a need for a background
 
 export const Projects = () => {
@@ -42,20 +42,20 @@ export const Projects = () => {
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="projects-slider">
                             <div className="item">
-                                <img src={speech} alt="Image" />
-                                <h5>Child an Women Advocacy</h5>
+                                <img src={baby} alt="Image" width={100}/>
+                                <h5>One Baby One Crib</h5>
                             </div>
                             <div className="item">
-                                <img src={speech2} alt="Image" />
-                                <h5>Child an Women Advocacy</h5>
+                                <img src={marketBuilding} alt="Image" />
+                                <h5>Creating a new Market Building</h5>
                             </div>
                             <div className="item">
-                                <img src={redcarpet6} alt="Image" />
-                                <h5>Child an Women Advocacy</h5>
+                                <img src={marketBuilding2} alt="Image" />
+                                <h5>Improving the new Market Building</h5>
                             </div>
                             <div className="item">
-                                <img src={redcarpet7} alt="Image" />
-                                <h5>Child an Women Advocacy</h5>
+                                <img src={schoolDesk} alt="Image" />
+                                <h5>School Desk Building</h5>
                             </div>
                         </Carousel>
                     </div>
